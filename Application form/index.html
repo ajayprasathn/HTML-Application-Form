@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Filing</title>
+</head>
+<body>
+    <br /><br /><br />
+    <div style="border: 2px solid black;">
+    <center>
+     <h1>Application Form</h1>
+    <form>
+
+    <label for="firstname">Enter Your First Name:</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your Name Please" required /><br /><br />
+
+    <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required /><br /><br />
+
+     <label for="lastname">Enter Your Last Name:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your Sur Name" required /><br /><br />
+
+    <label for="photo">Upload Your Photo:<span style="color: red;">*</span></label>
+    <input type="file" id="photo" name="photo" accept="image/*" required /><br /><br />
+
+    <label for="email">Enter Your Mail Id:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Mail id" required /><br /><br />
+
+    <label for="phone">Enter Your Phone No:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Whatsapp No" pattern="[0-9]{10}" /><br /><br />
+
+    <label>Gender:</label><br />
+    <input type="radio" id="male" name="gender" value="Male" required />
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female" />
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="Other" />
+    <label for="other">Others</label><br /><br />
+
+     <label for="date">Date:<span style="color: red;">*</span></label>
+    <input type="date" id="date" name="date" required /><br /><br />
+
+    <label for="bloodgroup">Blood group:</label>
+    <input type="text" id="bloodgroup" name="bloodgroup" placeholder="e.g. A+" /><br /><br />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter with Door no" /><br /><br />
+
+    <label for="landmark">LandMark:</label>
+    <input type="text" id="landmark" name="landmark" placeholder="" /><br /><br />
+
+     <label for="fatheroccupation">Your Father Occupation:</label>
+     <input type="text" id="fatheroccupation" name="fatheroccupation" placeholder="Father Occupation" /><br /><br />
+
+        <label for="fathername">Your Father Name:</label>
+            <input type="text" id="fathername" name="fathername" placeholder="Father Name" /><br /><br />
+
+         <label for="mothername">Your Mother Name:</label>
+     <input type="text" id="mothername" name="mothername" placeholder="Mother Name" /><br /><br />
+
+    <label for="motheroccupation">Your Mother Occupation:</label>
+     <input type="text" id="motheroccupation" name="motheroccupation" placeholder="Mother Occupation" /><br /><br />
+
+     <label for="currentrole">Your Current Role:</label>
+     <select id="currentrole" name="currentrole">
+     <option value="">Select</option>
+    <option value="schoolstudent">School Student</option>
+    <option value="diplomastudent">Diploma Student</option>
+    <option value="others">Others</option>
+    </select><br /><br />
+
+    <label for="institution">Enter Your Institution Name:<span style="color: red;">*</span></label>
+    <input type="text" id="institution" name="institution" placeholder="Type your Company" required /><br /><br />
+
+    <label for="course">Enter Your Course:</label>
+    <input type="text" id="course" name="course" placeholder="Enter your domain" /><br /><br />
+
+    <label for="sslc">SSLC Percentage:<span style="color: red;">*</span></label>
+    <input type="number" id="sslc" name="sslc" min="0" max="100" step="0.01" placeholder="00.00" required />%<br /><br />
+
+    <label for="hsc">HSC Percentage:</label>
+    <input type="number" id="hsc" name="hsc" min="0" max="100" step="0.01" placeholder="00.00" />%<br /><br />
+
+    <label for="diploma">Diploma CGPA:<span style="color: red;"></span></label>
+    <input type="number" id="diploma" name="diploma" min="0" max="10" step="0.01" placeholder="0.00" required /><br /><br />
+
+    <label>Are you Disabled Person:</label><br />
+    <input type="radio" id="disabledyes" name="disabled" value="Yes" />
+    <label for="disabledyes">Yes</label>
+     <input type="radio" id="disabledno" name="disabled" value="No" />
+    <label for="disabledno">No</label><br /><br />
+
+     <label for="mole">Mole:</label>
+    <input type="text" id="mole" name="mole" placeholder="Type correctly" /><br /><br />
+
+    <label for="scar">Scar:</label>
+    <input type="text" id="scar" name="scar" placeholder="Enter correctly" /><br /><br />
+
+    <label>Interests:</label>
+    <input type="checkbox" id="interest1" name="interests" value="sports" />
+    <label for="interest1">Sports</label>
+     <input type="checkbox" id="interest2" name="interests" value="music" />
+    <label for="interest2">Music</label>
+    <input type="checkbox" id="interest3" name="interests" value="reading" />
+     <label for="interest3">Reading</label><br /><br />
+
+    <input type="hidden" id="formId" name="formId" value="appForm12345" />
+
+     <label for="satisfaction">Satisfaction Level (0-10):</label>
+    <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" step="1" value="5" /><br /><br />
+
+     <label for="favcolor">Favorite Color:</label>
+    <input type="color" id="favcolor" name="favcolor"/><br /><br />
+
+    <label for="searchcourse">Search Course:</label>
+    <input type="search" id="searchcourse" name="searchcourse" placeholder="Enter course keyword" /><br /><br />
+
+    <label for="portfolio">Portfolio URL:</label>
+    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourwebsite.com" /><br /><br />
+
+    <label for="weekavailable">Week Available:</label>
+    <input type="week" id="weekavailable" name="weekavailable" /><br /><br />
+
+    <label for="birthmonth">Birth Month:</label>
+     <input type="month" id="birthmonth" name="birthmonth" /><br /><br />
+
+     <label for="preferredtime">Preferred Contact Time:</label>
+      <input type="time" id="preferredtime" name="preferredtime" /><br /><br />
+
+    <input type="image" src="https://via.placeholder.com/100x40?text=Submit" alt="Submit Form" /><br /><br />
+
+     <button type="button" onclick="alert('Please review your inputs before submission!')">Check Form</button><br /><br />
+
+           <input type="submit" value="Submit Your Application" /><br /><br />
+
+    <input type="reset" value="Reset Your Application"/><br><br>
+    
+    <a href="http://127.0.0.1:5500/index.html"><b><h2>Home Page</h2></b></a>
+    </form>
+    </center>
+    </div>
+</body>
+</html>
